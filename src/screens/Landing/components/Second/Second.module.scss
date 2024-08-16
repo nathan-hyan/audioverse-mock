@@ -1,0 +1,20 @@
+@import '@styles/mixins.scss';
+
+.container {
+  min-height: 100vh;
+  @include flex(center, center, row);
+  gap: 2.4rem;
+  white-space: pre-wrap;
+  @include responsive(sm) {
+    padding: 0.8rem;
+
+    white-space: normal;
+    @include flex(center, center, column);
+  }
+}
+
+.text {
+  button {
+    margin-top: 2.4rem;
+  }
+}

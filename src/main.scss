@@ -18,6 +18,7 @@ html {
   font-size: 10px;
   text-size-adjust: none;
   color: $text;
+  background-color: rgba($background, 0.8);
 }
 
 /* Remove default margin in favour of better control in authored CSS */
