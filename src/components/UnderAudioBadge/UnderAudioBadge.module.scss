@@ -1,0 +1,14 @@
+@import "@styles/vars.scss";
+
+.carbonBadge {
+  display: flex;
+  align-items: center;
+  white-space: no-wrap;
+  gap: 0.8rem;
+  background-color: $accent;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-weight: lighter;
+  min-width: fit-content;
+  font-size: 0.8rem;
+}

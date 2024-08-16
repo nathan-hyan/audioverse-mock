@@ -1,0 +1,23 @@
+@use 'sass:color';
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+
+  background-color: $accent;
+  transition: 0.1s;
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+
+  &:active {
+    background-color: darken($accent, 20%);
+    scale: 0.98;
+  }
+}
