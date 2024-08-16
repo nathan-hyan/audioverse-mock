@@ -1,7 +1,7 @@
 @import '@styles/mixins.scss';
 
 .container {
-  min-height: 100vh;
+  min-height: 100dvh;
   @include flex(center, center, row);
   gap: 2.4rem;
   white-space: pre-wrap;

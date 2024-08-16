@@ -1,10 +1,11 @@
-import { Hero, Second } from "./components";
+import { Hero, Second, Third } from "./components";
 
 function Landing() {
   return (
     <>
       <Hero />
       <Second />
+      <Third />
     </>
   );
 }
