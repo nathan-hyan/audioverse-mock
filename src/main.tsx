@@ -1,36 +1,36 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import {
   Checkout,
   Landing,
   PrinterSelection,
   PurchaseComplete,
-} from "@screens";
+} from '@screens';
 
-import "./main.scss";
+import './main.scss';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Landing />,
   },
   {
-    path: "/printer-selection",
+    path: '/printer-selection',
     element: <PrinterSelection />,
   },
   {
-    path: "/checkout",
+    path: '/checkout',
     element: <Checkout />,
   },
   {
-    path: "/purchase-complete",
+    path: '/purchase-complete',
     element: <PurchaseComplete />,
   },
 ]);
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 );

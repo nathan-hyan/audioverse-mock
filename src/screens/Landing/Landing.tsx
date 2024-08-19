@@ -1,4 +1,4 @@
-import { Hero, Second, Third } from "./components";
+import { Hero, Second, Third } from './components';
 
 function Landing() {
   return (

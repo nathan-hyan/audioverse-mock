@@ -1,5 +1,5 @@
 export const LOCAL_ANIMATIONS = {
-  global: {
+  container: {
     visible: {
       opacity: 1,
       x: 0,
@@ -22,5 +22,9 @@ export const LOCAL_ANIMATIONS = {
         staggerChildren: 1.2,
       },
     },
+  },
+  img: {
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
   },
 };

@@ -1,7 +1,7 @@
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./UnderAudioBadge.module.scss";
-import { motion, Variants } from "framer-motion";
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './UnderAudioBadge.module.scss';
+import { motion, Variants } from 'framer-motion';
 
 interface Props {
   variants: Variants;

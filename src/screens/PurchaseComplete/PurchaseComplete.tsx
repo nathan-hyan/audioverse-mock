@@ -1,6 +1,4 @@
 function PurchaseComplete() {
-  return (
-    <div>PurchaseComplete</div>
-  )
+  return <div>PurchaseComplete</div>;
 }
-export default PurchaseComplete
+export default PurchaseComplete;

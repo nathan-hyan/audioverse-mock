@@ -1,14 +1,13 @@
-import { motion, Variants } from "framer-motion";
-import styles from "./Button.module.scss";
+import { HTMLMotionProps, motion } from 'framer-motion';
+import styles from './Button.module.scss';
 
 interface Props {
   label: string;
-  variants?: Variants;
 }
 
-function Button({ label, variants }: Props) {
+function Button({ label, ...props }: Props & HTMLMotionProps<'button'>) {
   return (
-    <motion.button variants={variants} type="button" className={styles.button}>
+    <motion.button {...props} type='button' className={styles.button}>
       {label}
     </motion.button>
   );
