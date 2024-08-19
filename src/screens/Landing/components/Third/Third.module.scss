@@ -17,4 +17,8 @@
   @include flex(center, flex-start, column);
   gap: 2.4rem;
   white-space: pre-wrap;
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+  }
 }

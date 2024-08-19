@@ -1,0 +1,13 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.container {
+  min-height: 100dvh;
+  padding: 3.2rem;
+  @include flex(center, center, row);
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+    @include flex(center, center, column-reverse);
+  }
+}
