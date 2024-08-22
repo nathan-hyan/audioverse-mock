@@ -2,12 +2,33 @@
 @import '@styles/mixins.scss';
 
 .container {
+  @include flex(space-between, center, row);
   min-height: 100dvh;
   padding: 3.2rem;
-  @include flex(center, center, row);
+  gap: 3.2rem;
+}
 
+.leftSide {
+  width: 45%;
   @include responsive(sm) {
-    padding: 0.8rem;
-    @include flex(center, center, column-reverse);
+    width: 100%;
   }
+}
+
+.verticalLine {
+  width: 1px;
+  height: 90dvh;
+  background-color: rgba($text, 0.1);
+}
+
+.rightSide {
+  width: 45%;
+  @include responsive(sm) {
+    width: 100%;
+  }
+}
+
+.img {
+  height: 90dvh;
+  object-fit: cover;
 }
