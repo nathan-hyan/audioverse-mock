@@ -1,0 +1,12 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.separator {
+  margin: 1.6rem 0;
+  border: none;
+  border-top: 1px solid $text;
+
+  @include responsive(sm) {
+    opacity: 0.3;
+  }
+}

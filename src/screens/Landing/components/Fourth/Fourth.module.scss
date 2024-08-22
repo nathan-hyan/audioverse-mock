@@ -6,12 +6,28 @@
   min-height: 100dvh;
   padding: 3.2rem;
   gap: 3.2rem;
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+    @include flex(flex-start, flex-start, column-reverse);
+  }
 }
 
 .leftSide {
-  width: 45%;
+  width: 40%;
+  white-space: pre-wrap;
+
   @include responsive(sm) {
+    white-space: normal;
     width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  hr {
+    margin: 2rem 0;
   }
 }
 
@@ -19,10 +35,15 @@
   width: 1px;
   height: 90dvh;
   background-color: rgba($text, 0.1);
+
+  @include responsive(sm) {
+    width: 100%;
+    height: 1px;
+  }
 }
 
 .rightSide {
-  width: 45%;
+  width: 40%;
   @include responsive(sm) {
     width: 100%;
   }

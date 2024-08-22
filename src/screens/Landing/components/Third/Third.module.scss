@@ -20,5 +20,6 @@
 
   @include responsive(sm) {
     padding: 0.8rem;
+    white-space: normal;
   }
 }

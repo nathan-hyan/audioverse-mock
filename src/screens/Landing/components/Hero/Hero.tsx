@@ -1,5 +1,5 @@
 import styles from './Hero.module.scss';
-import { Button, UnderAudioBadge } from '@components';
+import { Button, Separator, UnderAudioBadge } from '@components';
 import { motion } from 'framer-motion';
 import { LOCAL_ANIMATIONS, ITEMS } from './constants';
 import { Item } from './components';
@@ -20,7 +20,7 @@ function Landing() {
           <UnderAudioBadge variants={LOCAL_ANIMATIONS.title} />
         </motion.div>
 
-        <hr className={styles.separator} />
+        <Separator />
 
         <motion.div
           variants={LOCAL_ANIMATIONS.items}

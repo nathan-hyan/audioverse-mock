@@ -44,16 +44,6 @@
   }
 }
 
-.separator {
-  margin: 1.6rem 0;
-  border: none;
-  border-top: 1px solid $text;
-
-  @include responsive(sm) {
-    opacity: 0.3;
-  }
-}
-
 .itemContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

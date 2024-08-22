@@ -1,32 +1,36 @@
+import { Separator } from '@components';
 import styles from './Fourth.module.scss';
 
 function Fourth() {
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <h2>La manera más cómoda de imprimir</h2>
+        <h2>Tu música, a otro nivel</h2>
         <p>
-          Todo lo que necesitas, cuando lo necesitas. Disfruta de una nueva
-          impresora HP y recibe automáticamente tus cartuchos en casa antes de
-          que se agoten, todo en una única cuota mensual y a un precio muy bajo.
+          {`Lleva tu pasión por la música a nuevas alturas con AudioVerse.
+Nuestros altavoces y DACs de alta fidelidad están diseñados para
+ofrecer un sonido excepcional, brindándote la experiencia auditiva que
+siempre soñaste.`}
         </p>
 
-        <hr />
+        <Separator />
 
-        <h2>Cambia de plan cuando lo necesites</h2>
+        <h2>Encuentra tu tono perfecto</h2>
         <p>
-          Elige el plan perfecto para ti - desde esporádico a profesional - y
-          ajústalo fácilmente si tus necesidades de impresión cambian.
+          {`Explora nuestra colección y elige el equipo que mejor se ajuste a tu
+estilo de vida. Desde configuraciones compactas para espacios pequeños
+hasta sistemas avanzados para audiófilos, AudioVerse tiene lo que
+necesitas para disfrutar de cada nota con claridad y profundidad.`}
         </p>
 
-        <hr />
+        <Separator />
 
-        <h2>Estamos aquí cuando nos necesites</h2>
+        <h2>Estamos aquí para perfeccionar tu sonido</h2>
         <p>
-          Confía en nuestro servicio de atención al cliente personalizado y
-          disfruta de una garantía ilimitada mientras esté activa tu
-          suscripción. En caso de necesidad, te reemplazamos la impresora al
-          siguiente día laborable.
+          {`Nuestro equipo de expertos está siempre disponible para ayudarte a
+sacar el máximo provecho de tus productos AudioVerse. Además,
+ofrecemos una garantía extendida y un proceso de reemplazo rápido y
+sencillo, para que nunca pierdas un solo beat.`}
         </p>
       </div>
 

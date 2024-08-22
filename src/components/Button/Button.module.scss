@@ -10,7 +10,7 @@
   background-color: $accent;
   transition: 0.1s;
   cursor: pointer;
-  color: white;
+  color: $white;
 
   &:hover {
     background-color: darken($accent, 10%);

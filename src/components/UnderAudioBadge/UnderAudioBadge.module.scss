@@ -1,14 +1,20 @@
-@import "@styles/vars.scss";
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
 
 .carbonBadge {
-  display: flex;
-  align-items: center;
-  white-space: no-wrap;
+  @include flex(center, center, row);
   gap: 0.8rem;
-  background-color: $accent;
   padding: 0.4rem 0.8rem;
+
+  white-space: no-wrap;
+  background-color: $accent;
   border-radius: 50px;
   font-weight: lighter;
   min-width: fit-content;
   font-size: 0.8rem;
+
+  p,
+  svg {
+    color: $white;
+  }
 }
