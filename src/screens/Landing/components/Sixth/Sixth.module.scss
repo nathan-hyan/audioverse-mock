@@ -1,0 +1,36 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.container {
+  @include flex(space-around, center, row);
+  background-position: center;
+  background-size: cover;
+  min-height: 100dvh;
+  padding: 3.2rem;
+  gap: 1.8rem;
+  white-space: pre-wrap;
+  text-align: center;
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+    @include flex(flex-start, flex-start, column-reverse);
+  }
+}
+
+.section {
+  width: 40%;
+}
+
+.leftSide {
+  height: 90dvh;
+  background-image: url('https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+}
+
+.rightSide {
+  ul {
+    @include flex(flex-start, flex-start, column);
+    gap: 3.2rem;
+  }
+}

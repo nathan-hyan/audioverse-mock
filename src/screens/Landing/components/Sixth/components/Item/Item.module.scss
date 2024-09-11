@@ -1,0 +1,17 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.container {
+  @include flex(flex-start, flex-start, row);
+  gap: 1.6rem;
+  text-align: left;
+
+  h2 {
+    font-size: 4.8rem;
+  }
+}
+
+.detail {
+  @include flex(flex-start, flex-start, column);
+  gap: 0.8rem;
+}
