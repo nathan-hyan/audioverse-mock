@@ -1,4 +1,4 @@
-import { Fourth, Hero, Second, Third } from './components';
+import { Fifth, Fourth, Hero, Second, Third } from './components';
 
 function Landing() {
   return (
@@ -7,6 +7,7 @@ function Landing() {
       <Second />
       <Third />
       <Fourth />
+      <Fifth />
     </>
   );
 }
