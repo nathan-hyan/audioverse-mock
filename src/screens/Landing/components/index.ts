@@ -5,3 +5,4 @@ export { default as Fourth } from './Fourth/Fourth';
 export { default as Fifth } from './Fifth/Fifth';
 export { default as Sixth } from './Sixth/Sixth';
 export { default as Seventh } from './Seventh/Seventh';
+export { default as LandingFAQs } from './LandingFAQs/LandingFAQs';

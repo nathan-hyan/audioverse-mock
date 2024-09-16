@@ -22,7 +22,8 @@
     "paths": {
       "@components": ["./src/components"],
       "@screens": ["./src/screens"],
-      "@styles": ["./src/styles"]
+      "@styles": ["./src/styles"],
+      "@constants": ["./src/constants"]
     }
   },
   "include": ["src"]

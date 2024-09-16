@@ -2,6 +2,7 @@ import {
   Fifth,
   Fourth,
   Hero,
+  LandingFAQs,
   Second,
   Seventh,
   Sixth,
@@ -18,6 +19,7 @@ function Landing() {
       <Fifth />
       <Sixth />
       <Seventh />
+      <LandingFAQs />
     </>
   );
 }
