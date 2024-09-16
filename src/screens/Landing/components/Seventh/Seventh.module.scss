@@ -1,0 +1,28 @@
+@import '@styles/vars.scss';
+@import '@styles/mixins.scss';
+
+.container {
+  @include flex(center, flex-start, column);
+  background-image: url('https://images.unsplash.com/photo-1592390573190-bfcc5222adec?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  padding: 3.2rem;
+  gap: 1.8rem;
+  white-space: pre-wrap;
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+    @include flex(flex-start, flex-start, column-reverse);
+  }
+}
+
+.box {
+  width: 30%;
+  background-color: $white;
+  color: $text-inverted;
+  border-right: 0.5rem solid $primary;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+}
