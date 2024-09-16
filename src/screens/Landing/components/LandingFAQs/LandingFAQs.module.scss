@@ -1,23 +1,29 @@
-@import '@styles/vars.scss';
-@import '@styles/mixins.scss';
+@import '@styles/vars';
+@import '@styles/mixins';
 
 .container {
   @include flex(center, center, column);
-  background-position: center;
-  background-size: cover;
+
+  gap: 1.8rem;
+
   min-height: 100dvh;
   padding: 3.2rem;
-  gap: 1.8rem;
-  white-space: pre-wrap;
+
   text-align: center;
+  white-space: pre-wrap;
+
+  background-position: center;
+  background-size: cover;
 
   @include responsive(sm) {
     padding: 0.8rem;
+
     @include flex(flex-start, flex-start, column-reverse);
   }
 }
 
-.accordionContainer {
+.accordion-container {
   @include flex(flex-start, flex-start, column);
+
   gap: 0.8rem;
 }

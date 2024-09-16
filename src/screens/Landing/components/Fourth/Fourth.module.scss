@@ -1,25 +1,27 @@
-@import '@styles/vars.scss';
-@import '@styles/mixins.scss';
+@import '@styles/vars';
+@import '@styles/mixins';
 
 .container {
   @include flex(space-between, center, row);
+
+  gap: 3.2rem;
   min-height: 100dvh;
   padding: 3.2rem;
-  gap: 3.2rem;
 
   @include responsive(sm) {
     padding: 0.8rem;
+
     @include flex(flex-start, flex-start, column-reverse);
   }
 }
 
-.leftSide {
+.left-side {
   width: 40%;
   white-space: pre-wrap;
 
   @include responsive(sm) {
-    white-space: normal;
     width: 100%;
+    white-space: normal;
   }
 
   h2 {
@@ -31,7 +33,7 @@
   }
 }
 
-.verticalLine {
+.vertical-line {
   width: 1px;
   height: 90dvh;
   background-color: rgba($text, 0.1);
@@ -42,8 +44,9 @@
   }
 }
 
-.rightSide {
+.right-side {
   width: 40%;
+
   @include responsive(sm) {
     width: 100%;
   }

@@ -20,30 +20,33 @@
 
   transition: 0.2s;
 
-  &Label {
+  &-label {
     @include flex(space-between, center, row);
+
     @include responsive(md) {
       font-size: 1.5rem;
       line-height: 2.3rem;
     }
+
+    cursor: pointer;
+
     padding: 0.8rem;
+
     color: $text-inverted;
 
     background: $white;
 
-    cursor: pointer;
-
     transition: 0.2s;
 
     &::after {
+      content: url('./assets/chevron-down-solid.svg');
+
       min-width: 1.2rem;
       min-height: 1.2rem;
 
       text-align: center;
 
       transition: all 0.2s ease-in-out;
-
-      content: url('./assets/chevron-down-solid.svg');
     }
 
     &:hover {
@@ -53,14 +56,14 @@
     }
   }
 
-  &Content {
+  &-content {
     height: 0;
     padding: 0 1.2rem;
 
     color: $text-inverted;
 
-    background: $background-light;
     opacity: 0;
+    background: $background-light;
 
     transition: 0.2s;
 
@@ -73,12 +76,11 @@
 .input {
   position: absolute;
   z-index: -1;
-
   opacity: 0;
 }
 
 .input:checked {
-  + .tabLabel {
+  + .tab-label {
     border-bottom: 1px solid $primary-light;
 
     &::after {
@@ -86,11 +88,12 @@
     }
   }
 
-  ~ .tabContent {
-    height: auto;
-
+  ~ .tab-content {
     gap: 3rem;
+
+    height: auto;
     padding: 1.2rem;
+
     text-align: left;
 
     opacity: 1;

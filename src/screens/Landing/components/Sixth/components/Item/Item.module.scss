@@ -1,8 +1,9 @@
-@import '@styles/vars.scss';
-@import '@styles/mixins.scss';
+@import '@styles/vars';
+@import '@styles/mixins';
 
 .container {
   @include flex(flex-start, flex-start, row);
+
   gap: 1.6rem;
   text-align: left;
 
@@ -13,5 +14,6 @@
 
 .detail {
   @include flex(flex-start, flex-start, column);
+
   gap: 0.8rem;
 }

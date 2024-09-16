@@ -1,14 +1,16 @@
-@import '@styles/mixins.scss';
+@import '@styles/mixins';
 
 .container {
-  min-height: 100dvh;
-  @include flex(center, center, row);
   gap: 2.4rem;
+  min-height: 100dvh;
   white-space: pre-wrap;
+
+  @include flex(center, center, row);
+
   @include responsive(sm) {
     padding: 0.8rem;
-
     white-space: normal;
+
     @include flex(center, center, column);
   }
 }

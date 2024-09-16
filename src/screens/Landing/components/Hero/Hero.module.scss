@@ -1,33 +1,37 @@
-@import '@styles/vars.scss';
-@import '@styles/mixins.scss';
+@import '@styles/vars';
+@import '@styles/mixins';
 
 .container {
   position: relative;
+
   min-height: 100dvh;
+
   background-image: url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: right;
   background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
 
   @include responsive(sm) {
-    background-position: left;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 80%)),
       url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: left;
   }
 }
 
 .content {
-  background-color: rgba($background, 0.8);
-  backdrop-filter: blur(10px);
   position: absolute;
   bottom: 0;
-  padding: 3.2rem;
+
   width: 100%;
+  padding: 3.2rem;
+
+  background-color: rgba($background, 0.8);
+  backdrop-filter: blur(10px);
 
   @include responsive(sm) {
-    background-color: transparent;
     position: relative;
     padding: 0.8rem;
+    background-color: transparent;
   }
 }
 
@@ -38,25 +42,27 @@
 
   @include responsive(sm) {
     flex-direction: column-reverse;
-    align-items: flex-start;
     gap: 0.8rem;
+    align-items: flex-start;
     margin-top: 9.6rem;
   }
 }
 
-.itemContainer {
+.item-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2.4rem;
 }
 
 .footer {
-  margin-top: 2.4rem;
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
   align-items: flex-start;
   justify-content: center;
-  gap: 0.8rem;
+
+  margin-top: 2.4rem;
+
   white-space: pre-wrap;
 
   @include responsive(sm) {
