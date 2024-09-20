@@ -7,8 +7,6 @@
   min-height: 100dvh;
   padding: 3.2rem;
 
-  white-space: pre-wrap;
-
   background-image: linear-gradient(
       90deg,
       rgba($background, 1) 0%,
@@ -22,6 +20,5 @@
 
   @include responsive(sm) {
     padding: 0.8rem;
-    white-space: normal;
   }
 }

@@ -6,3 +6,5 @@ export { default as Fifth } from './Fifth/Fifth';
 export { default as Sixth } from './Sixth/Sixth';
 export { default as Seventh } from './Seventh/Seventh';
 export { default as LandingFAQs } from './LandingFAQs/LandingFAQs';
+export { default as LandingDisclaimers } from './LandingDisclaimers/LandingDisclaimers';
+export { default as Footer } from './Footer/Footer';

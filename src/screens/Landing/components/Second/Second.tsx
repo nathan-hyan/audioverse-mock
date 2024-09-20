@@ -26,9 +26,9 @@ function Second() {
         <motion.p variants={LOCAL_ANIMATIONS.container}>
           PARLANTES. DAC. CABLES.
         </motion.p>
-        <motion.h2
-          variants={LOCAL_ANIMATIONS.container}
-        >{`Tu música, tu vida\nComo nunca antes\nlo habías escuchado.`}</motion.h2>
+        <motion.h2 variants={LOCAL_ANIMATIONS.container}>
+          Tu música, tu vida como nunca antes lo habías escuchado.
+        </motion.h2>
         <Button variants={LOCAL_ANIMATIONS.container} label={'Conocer más'} />
       </motion.div>
     </motion.div>

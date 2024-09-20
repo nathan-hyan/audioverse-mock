@@ -1,0 +1,15 @@
+@import '@styles/vars';
+@import '@styles/mixins';
+
+.container {
+  gap: 1.8rem;
+  min-height: 100dvh;
+  padding: 3.2rem;
+  background-color: $background;
+
+  @include flex(flex-start, flex-stretch, column);
+
+  @include responsive(sm) {
+    padding: 0.8rem;
+  }
+}

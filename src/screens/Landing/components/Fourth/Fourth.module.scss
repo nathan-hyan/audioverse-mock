@@ -17,11 +17,9 @@
 
 .left-side {
   width: 40%;
-  white-space: pre-wrap;
 
   @include responsive(sm) {
     width: 100%;
-    white-space: normal;
   }
 
   h2 {

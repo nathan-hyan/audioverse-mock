@@ -16,7 +16,7 @@ html {
   font-size: 100%;
   color: $text;
   text-size-adjust: none;
-  background-color: rgba($background, 0.8);
+  background-color: rgba($background, 0.9);
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -47,6 +47,7 @@ h4,
 h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 h1 {
@@ -116,7 +117,10 @@ label {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  max-width: 35ch;
   text-wrap: balance;
 }
 
@@ -147,6 +151,14 @@ button,
 p,
 img {
   font-family: Moderustic, sans-serif;
+}
+
+p,
+li,
+figcaption,
+small {
+  max-width: 65ch;
+  text-wrap: pretty;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */

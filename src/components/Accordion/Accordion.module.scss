@@ -23,20 +23,20 @@
   &-label {
     @include flex(space-between, center, row);
 
-    @include responsive(md) {
-      font-size: 1.5rem;
-      line-height: 2.3rem;
-    }
-
     cursor: pointer;
 
     padding: 0.8rem;
 
-    color: $text-inverted;
+    color: $text;
 
-    background: $white;
+    background: $background;
 
     transition: 0.2s;
+
+    @include responsive(md) {
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+    }
 
     &::after {
       content: url('./assets/chevron-down-solid.svg');
@@ -60,10 +60,10 @@
     height: 0;
     padding: 0 1.2rem;
 
-    color: $text-inverted;
+    color: $text;
 
     opacity: 0;
-    background: $background-light;
+    background: $black;
 
     transition: 0.2s;
 
@@ -81,7 +81,7 @@
 
 .input:checked {
   + .tab-label {
-    border-bottom: 1px solid $primary-light;
+    border-bottom: 1px solid rgba($text, 0.1);
 
     &::after {
       transform: rotate(180deg);

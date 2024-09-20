@@ -44,7 +44,9 @@ function Landing() {
             label='Comienza desde 3,99€ al mes'
           />
           <motion.small variants={LOCAL_ANIMATIONS.footer}>
-            {`Prueba AudioVerse sin ataduras durante 30 días. Si decides cancelar\ndurante los primeros 6 meses, se aplicará una tarifa de cancelación.\nLa suscripción se renueva automáticamente cada mes.`}
+            Prueba AudioVerse sin ataduras durante 30 días. Si decides
+            cancelar\ndurante los primeros 6 meses, se aplicará una tarifa de
+            cancelación.\nLa suscripción se renueva automáticamente cada mes.
           </motion.small>
         </motion.footer>
       </div>

@@ -63,10 +63,7 @@
 
   margin-top: 2.4rem;
 
-  white-space: pre-wrap;
-
   @include responsive(sm) {
     margin: 3.2rem 0;
-    white-space: normal;
   }
 }

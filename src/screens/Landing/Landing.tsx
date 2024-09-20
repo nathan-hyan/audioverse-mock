@@ -1,7 +1,9 @@
 import {
   Fifth,
+  Footer,
   Fourth,
   Hero,
+  LandingDisclaimers,
   LandingFAQs,
   Second,
   Seventh,
@@ -20,6 +22,8 @@ function Landing() {
       <Sixth />
       <Seventh />
       <LandingFAQs />
+      <LandingDisclaimers />
+      <Footer />
     </>
   );
 }
