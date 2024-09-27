@@ -62,6 +62,7 @@
 
     color: $text;
 
+    visibility: hidden;
     opacity: 0;
     background: $black;
 
@@ -96,6 +97,7 @@
 
     text-align: left;
 
+    visibility: visible;
     opacity: 1;
   }
 }

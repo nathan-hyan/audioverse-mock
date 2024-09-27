@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { LOCAL_ANIMATIONS, ITEMS } from './constants';
 import { Item } from './components';
 
-function Landing() {
+function Hero() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -53,4 +53,4 @@ function Landing() {
     </div>
   );
 }
-export default Landing;
+export default Hero;

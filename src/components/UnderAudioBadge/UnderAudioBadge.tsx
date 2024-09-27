@@ -9,7 +9,11 @@ interface Props {
 
 function UnderAudioBadge({ variants }: Props) {
   return (
-    <motion.div variants={variants} className={styles.carbonBadge}>
+    <motion.div
+      data-testid='UnderAudioBadge'
+      variants={variants}
+      className={styles.carbonBadge}
+    >
       <FontAwesomeIcon icon={faGlobe} />
       <p>Certificado UnderAudio</p>
     </motion.div>

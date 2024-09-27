@@ -1,9 +1,21 @@
 import path from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    setupFiles: ['./src/setupTest.ts'],
+    css: true,
+    coverage: {
+      reporter: ['json-summary', 'json'],
+      enabled: true,
+      skipFull: false,
+      provider: 'v8',
+    },
+  },
   plugins: [react()],
   resolve: {
     alias: {
@@ -15,6 +27,11 @@ export default defineConfig({
     },
   },
   css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
     modules: {
       localsConvention: 'camelCaseOnly',
     },
